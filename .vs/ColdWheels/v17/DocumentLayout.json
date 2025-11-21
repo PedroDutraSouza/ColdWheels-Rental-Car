@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|c:\\users\\pedro\\onedrive\\desktop\\coldwheels\\coldwheels - malta\\coldwheels - copy - copy\\telas\\interno\\telalocacoes\\telaeditarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|solutionrelative:telas\\interno\\telalocacoes\\telaeditarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|c:\\users\\pedro\\onedrive\\desktop\\coldwheels\\coldwheels - malta\\coldwheels - copy - copy\\telas\\interno\\telalocacoes\\telacadastrarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|solutionrelative:telas\\interno\\telalocacoes\\telacadastrarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|c:\\users\\pedro\\onedrive\\desktop\\coldwheels\\coldwheels - malta\\coldwheels - copy - copy\\telas\\interno\\telalocacoes\\telacadastrarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|solutionrelative:telas\\interno\\telalocacoes\\telacadastrarlocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\telas\\interno\\telalocacoes\\telalocacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|solutionrelative:telas\\interno\\telalocacoes\\telalocacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1F2E2D8-32F3-467A-AEB4-4A4E4754A9A0}|ColdWheels.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "telaCadastrarLocacao.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "RelativeDocumentMoniker": "Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "RelativeToolTip": "Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T20:11:38.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "telaCadastrarLocacao.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "RelativeDocumentMoniker": "Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs [Design]",
+              "RelativeToolTip": "Telas\\Interno\\telaLocacoes\\telaCadastrarLocacao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:17:59.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "telaEditarLocacao.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaEditarLocacao.cs",
+              "RelativeDocumentMoniker": "Telas\\Interno\\telaLocacoes\\telaEditarLocacao.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaEditarLocacao.cs [Design]",
+              "RelativeToolTip": "Telas\\Interno\\telaLocacoes\\telaEditarLocacao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:16:27.189Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "telaLocacoes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaLocacoes.cs",
+              "RelativeDocumentMoniker": "Telas\\Interno\\telaLocacoes\\telaLocacoes.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Telas\\Interno\\telaLocacoes\\telaLocacoes.cs [Design]",
+              "RelativeToolTip": "Telas\\Interno\\telaLocacoes\\telaLocacoes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T18:24:52.593Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Desktop\\ColdWheels\\ColdWheels - Malta\\ColdWheels - Copy - Copy\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T14:22:17.203Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
