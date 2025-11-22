@@ -14,10 +14,12 @@ namespace ColdWheels
 {
     public partial class Form1 : Form
     {
+        public static Form1 Instance;
         bool abrirBarra;
         public Form1()
         {
             InitializeComponent();
+            Instance = this;
             ConfigurarPermissoes();
         }
         private void ConfigurarPermissoes()
@@ -30,17 +32,14 @@ namespace ColdWheels
             }
             
         }
-        private void LoadUserControl(UserControl userControl)
+
+        public void TrocarTela(UserControl novaTela)
         {
-            // Limpa qualquer controlo que esteja atualmente no painel
-            pnlContent.Controls.Clear();
-
-            // Define o controlo para preencher todo o painel
-            userControl.Dock = DockStyle.Fill;
-
-            // Adiciona o novo controlo ao painel
-            pnlContent.Controls.Add(userControl);
+            // Como estou no Form1, eu tenho acesso ao painelConteudo
+            carregarSubTelas.Carregar(this.pnlContent, novaTela);
         }
+
+        
 
         private void parrotBatteryPercentage1_Tick(object sender, EventArgs e)
         {
@@ -94,7 +93,7 @@ namespace ColdWheels
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
             barraSeletora4.Visible = false;
-            LoadUserControl(new telaVeiculos());
+            TrocarTela(new telaVeiculos());
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -107,7 +106,7 @@ namespace ColdWheels
             barraSeletora.Visible = false;
             barraSeletora3.Visible = false;
             barraSeletora4.Visible = false;
-            LoadUserControl(new telaClientes());
+            TrocarTela(new telaClientes());
         }
 
         private void metroButton3_Click(object sender, EventArgs e)
@@ -120,7 +119,7 @@ namespace ColdWheels
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora4.Visible = false;
-            LoadUserControl(new telaLocacoes());
+            TrocarTela(new telaLocacoes());
         }
 
         private void metroButton4_Click(object sender, EventArgs e)
@@ -133,8 +132,35 @@ namespace ColdWheels
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
-            LoadUserControl(new telaMultas());
+            TrocarTela(new telaMultas());
         }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            pictureBox4.BackColor = metroButton2.HoverColor;
+            pictureBox1.BackColor = metroButton2.NormalColor;
+            pictureBox2.BackColor = metroButton2.NormalColor;
+            pictureBox3.BackColor = metroButton2.NormalColor;
+            barraSeletora4.Visible = true;
+            barraSeletora.Visible = false;
+            barraSeletora2.Visible = false;
+            barraSeletora3.Visible = false;
+            TrocarTela(new telaRelatorio());
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            pictureBox4.BackColor = metroButton2.HoverColor;
+            pictureBox1.BackColor = metroButton2.NormalColor;
+            pictureBox2.BackColor = metroButton2.NormalColor;
+            pictureBox3.BackColor = metroButton2.NormalColor;
+            barraSeletora4.Visible = true;
+            barraSeletora.Visible = false;
+            barraSeletora2.Visible = false;
+            barraSeletora3.Visible = false;
+            TrocarTela(new telaDashboard());
+        }
+
 
         private void metroButton1_MouseHover(object sender, EventArgs e)
         {

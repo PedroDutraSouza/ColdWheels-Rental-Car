@@ -35,8 +35,8 @@
             this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnEditarCliente = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -124,14 +124,6 @@
             this.panel2.Size = new System.Drawing.Size(137, 46);
             this.panel2.TabIndex = 9;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnCadastrarCliente);
-            this.panel1.Location = new System.Drawing.Point(759, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(137, 46);
-            this.panel1.TabIndex = 8;
-            // 
             // btnEditarCliente
             // 
             this.btnEditarCliente.Image = global::ColdWheels.Properties.Resources.contract_edit_24dp_000000_FILL0_wght400_GRAD0_opsz24;
@@ -144,6 +136,14 @@
             this.btnEditarCliente.Text = "    Editar Locação";
             this.btnEditarCliente.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCadastrarCliente);
+            this.panel1.Location = new System.Drawing.Point(759, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(137, 46);
+            this.panel1.TabIndex = 8;
+            // 
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.Image = global::ColdWheels.Properties.Resources.contract_24dp_000000_FILL0_wght400_GRAD0_opsz24;
@@ -155,6 +155,7 @@
             this.btnCadastrarCliente.TabIndex = 7;
             this.btnCadastrarCliente.Text = "        Nova Locação";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
             // telaLocacoes
             // 

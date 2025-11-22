@@ -16,5 +16,12 @@ namespace ColdWheels
         {
             InitializeComponent();
         }
+
+        
+
+        private void btnCadastrarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -20,28 +20,16 @@ namespace ColdWheels
         private void bigLabel1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void LoadUserControl(UserControl userControl)
-        {
-            // Limpa qualquer controlo que esteja atualmente no painel
-            this.Controls.Clear();
-
-            // Define o controlo para preencher todo o painel
-            userControl.Dock = DockStyle.Fill;
-
-            // Adiciona o novo controlo ao painel
-            this.Controls.Add(userControl);
-        }
+        } 
 
         private void btnEditarCliente_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new telaEditarClientes());
+            Form1.Instance.TrocarTela(new telaEditarClientes());
         }
 
-        private void btnCadastrarCliente_Click(object sender, EventArgs e)
+        public void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new telaCadastroClientes());
+            Form1.Instance.TrocarTela(new telaCadastroClientes());
         }
     }
 }
