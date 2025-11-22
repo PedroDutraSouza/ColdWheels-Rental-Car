@@ -578,6 +578,7 @@
             this.btnRelatorio.Text = "    Relátorio";
             this.btnRelatorio.ThemeAuthor = "Taiizor";
             this.btnRelatorio.ThemeName = "MetroLight";
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
             // containerDashboard
             // 
@@ -650,6 +651,7 @@
             this.btnDashboard.Text = "      DashBoard";
             this.btnDashboard.ThemeAuthor = "Taiizor";
             this.btnDashboard.ThemeName = "MetroLight";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // barraTimer
             // 

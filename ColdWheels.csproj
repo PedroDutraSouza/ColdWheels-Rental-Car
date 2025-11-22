@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.v8-xfa.props" Condition="Exists('packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.v8-xfa.props')" />
+  <Import Project="packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,6 +15,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -104,6 +108,9 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
     <Reference Include="Pomelo.EntityFrameworkCore.MySql, Version=3.2.7.0, Culture=neutral, PublicKeyToken=2cc498582444921b, processorArchitecture=MSIL">
       <HintPath>packages\Pomelo.EntityFrameworkCore.MySql.3.2.7\lib\netstandard2.0\Pomelo.EntityFrameworkCore.MySql.dll</HintPath>
     </Reference>
@@ -167,6 +174,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="carregarSubTelas.cs" />
     <Compile Include="Dados\dbContexto.cs" />
     <Compile Include="Dados\Entidades\Contato.cs" />
     <Compile Include="Db.cs" />
@@ -211,6 +219,18 @@
     </Compile>
     <Compile Include="Telas\Interno\telaLocacoes\telaEditarLocacao.Designer.cs">
       <DependentUpon>telaEditarLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Interno\telaMultas\telaCadastrarMultas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Interno\telaMultas\telaCadastrarMultas.Designer.cs">
+      <DependentUpon>telaCadastrarMultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Interno\telaMultas\telaEditarMultas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Interno\telaMultas\telaEditarMultas.Designer.cs">
+      <DependentUpon>telaEditarMultas.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Interno\telaVeiculos\telaCadastroVeiculos.cs">
       <SubType>UserControl</SubType>
@@ -331,6 +351,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Recursos\Contratos\modelo-de-contrato-de-aluguel-de-veiculo.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -343,10 +364,13 @@
     <Content Include="Recursos\Imagens\car_tag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\contract_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\contract_edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\dangerous_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\dashboard_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\directions_car_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\edit_square_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\flag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\directions_car_20dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" />
+    <Content Include="Recursos\Imagens\garage_money_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\Gemini_Generated_Image_ay2qyday2qyday2q%281%29.png" />
     <Content Include="Recursos\Imagens\group_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
@@ -364,4 +388,11 @@
     <Folder Include="Telas\Externo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props'))" />
+    <Error Condition="!Exists('packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.v8-xfa.props'))" />
+  </Target>
 </Project>
