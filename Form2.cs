@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -104,7 +105,9 @@ namespace ColdWheels
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
-            string senha = txtSenha.Text.Trim();
+            string senhadigitada = txtSenha.Text.Trim();
+            string senha = GerarHashSHA256(senhadigitada);
+            
 
             if (email == "" || senha == "")
             {
@@ -165,13 +168,30 @@ namespace ColdWheels
                         this.Hide();
                 }
 
-                
 
 
+            MessageBox.Show("Hash gerado pelo C#:\n\n" + senha);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message);
+            }
+            
+        }
+        private string GerarHashSHA256(string texto)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // Computa o hash - retorna um array de bytes
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(texto));
+
+                // Converte o array de bytes para uma string hexadecimal
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
     }

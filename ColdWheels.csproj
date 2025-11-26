@@ -175,9 +175,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="carregarSubTelas.cs" />
+    <Compile Include="Dados\CadastroC.cs" />
+    <Compile Include="Dados\CadastroM.cs" />
+    <Compile Include="Dados\CadastroR.cs" />
+    <Compile Include="Dados\CadastroV.cs" />
     <Compile Include="Dados\dbContexto.cs" />
     <Compile Include="Dados\Entidades\Contato.cs" />
-    <Compile Include="Db.cs" />
+    <Compile Include="Dados\Db.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +206,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sessao.cs" />
+    <Compile Include="Telas\Interno\telaHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Interno\telaHome.Designer.cs">
+      <DependentUpon>telaHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Interno\telaClientes\telaCadastroClientes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -274,11 +284,11 @@
     <Compile Include="Telas\Interno\telaMultas\telaMultas.Designer.cs">
       <DependentUpon>telaMultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Interno\Gerente\telaRelatorio\telaRelatorio.cs">
+    <Compile Include="Telas\Interno\Gerente\telaContrato\telaContrato.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Telas\Interno\Gerente\telaRelatorio\telaRelatorio.Designer.cs">
-      <DependentUpon>telaRelatorio.cs</DependentUpon>
+    <Compile Include="Telas\Interno\Gerente\telaContrato\telaContrato.Designer.cs">
+      <DependentUpon>telaContrato.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Interno\telaVeiculos\telaVeiculos.cs">
       <SubType>UserControl</SubType>
@@ -305,6 +315,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\Interno\telaHome.resx">
+      <DependentUpon>telaHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Interno\telaClientes\telaCadastroClientes.resx">
       <DependentUpon>telaCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +326,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Interno\telaLocacoes\telaEditarLocacao.resx">
       <DependentUpon>telaEditarLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Interno\telaMultas\telaCadastrarMultas.resx">
+      <DependentUpon>telaCadastrarMultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Interno\telaMultas\telaEditarMultas.resx">
+      <DependentUpon>telaEditarMultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Interno\telaVeiculos\telaCadastroVeiculos.resx">
       <DependentUpon>telaCadastroVeiculos.cs</DependentUpon>
@@ -335,8 +354,8 @@
     <EmbeddedResource Include="Telas\Interno\telaMultas\telaMultas.resx">
       <DependentUpon>telaMultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Interno\Gerente\telaRelatorio\telaRelatorio.resx">
-      <DependentUpon>telaRelatorio.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Interno\Gerente\telaContrato\telaContrato.resx">
+      <DependentUpon>telaContrato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Interno\telaVeiculos\telaVeiculos.resx">
       <DependentUpon>telaVeiculos.cs</DependentUpon>
@@ -363,6 +382,7 @@
     <Content Include="Recursos\Imagens\car_rental_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\car_tag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\contract_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\contract_delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\contract_edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\dangerous_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\dashboard_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
@@ -372,17 +392,22 @@
     <Content Include="Recursos\Imagens\directions_car_20dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png" />
     <Content Include="Recursos\Imagens\garage_money_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\Gemini_Generated_Image_ay2qyday2qyday2q%281%29.png" />
+    <Content Include="Recursos\Imagens\Gemini_Generated_Image_rpuo1irpuo1irpuo%281%29.png" />
     <Content Include="Recursos\Imagens\group_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\iceCar3.jpeg" />
     <Content Include="Recursos\Imagens\iceCar2.jpg" />
     <Content Include="Recursos\Imagens\iceCar1.jpg" />
+    <Content Include="Recursos\Imagens\logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\menu_30dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\person_add_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\person_edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\person_off_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="Recursos\Imagens\snow-mountain-mountainous-landforms-vehicle-car-luxury-vehicle-1592318-pxhere.com.png" />
     <Content Include="Recursos\Imagens\traffic_jam_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\visibility_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Recursos\Imagens\visibility_off_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Telas\Externo\" />

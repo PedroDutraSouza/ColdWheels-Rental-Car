@@ -36,50 +36,59 @@
             this.flpBarra = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.botaoMenu = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.barraSeletora = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroButton2 = new ReaLTaiizor.Controls.MetroButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.barraSeletora2 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroButton1 = new ReaLTaiizor.Controls.MetroButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.barraSeletora3 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.metroButton3 = new ReaLTaiizor.Controls.MetroButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.barraSeletora4 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.metroButton4 = new ReaLTaiizor.Controls.MetroButton();
             this.containerRelatorio = new System.Windows.Forms.Panel();
-            this.parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.barraSeletora5 = new ReaLTaiizor.Controls.ParrotGradientPanel();
             this.btnRelatorio = new ReaLTaiizor.Controls.MetroButton();
             this.containerDashboard = new System.Windows.Forms.Panel();
-            this.parrotGradientPanel2 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.barraSeletora6 = new ReaLTaiizor.Controls.ParrotGradientPanel();
             this.btnDashboard = new ReaLTaiizor.Controls.MetroButton();
             this.barraTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.metroButton8 = new ReaLTaiizor.Controls.MetroButton();
+            this.botaoMenu = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.parrotForm1.WorkingArea.SuspendLayout();
             this.parrotForm1.SuspendLayout();
             this.pgpBarra.SuspendLayout();
             this.flpBarra.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.botaoMenu)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.containerRelatorio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.containerDashboard.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.botaoMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // WorkingArea
@@ -170,6 +179,11 @@
             this.flpBarra.Controls.Add(this.panel5);
             this.flpBarra.Controls.Add(this.containerRelatorio);
             this.flpBarra.Controls.Add(this.containerDashboard);
+            this.flpBarra.Controls.Add(this.panel6);
+            this.flpBarra.Controls.Add(this.panel7);
+            this.flpBarra.Controls.Add(this.panel8);
+            this.flpBarra.Controls.Add(this.panel10);
+            this.flpBarra.Controls.Add(this.panel9);
             this.flpBarra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpBarra.Location = new System.Drawing.Point(0, 0);
             this.flpBarra.Margin = new System.Windows.Forms.Padding(0);
@@ -196,18 +210,6 @@
             this.label1.Size = new System.Drawing.Size(58, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
-            // 
-            // botaoMenu
-            // 
-            this.botaoMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botaoMenu.Image = global::ColdWheels.Properties.Resources.menu_30dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.botaoMenu.Location = new System.Drawing.Point(17, 35);
-            this.botaoMenu.Name = "botaoMenu";
-            this.botaoMenu.Size = new System.Drawing.Size(30, 30);
-            this.botaoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.botaoMenu.TabIndex = 0;
-            this.botaoMenu.TabStop = false;
-            this.botaoMenu.Click += new System.EventHandler(this.botaoMenu_Click);
             // 
             // panel3
             // 
@@ -242,17 +244,6 @@
             this.barraSeletora.TopLeft = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora.TopRight = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ColdWheels.Properties.Resources.directions_car_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox2.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // metroButton2
             // 
@@ -318,17 +309,6 @@
             this.barraSeletora2.TopRight = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora2.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ColdWheels.Properties.Resources.group_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // metroButton1
             // 
             this.metroButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -391,17 +371,6 @@
             this.barraSeletora3.TopLeft = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora3.TopRight = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora3.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ColdWheels.Properties.Resources.car_tag_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
             // 
             // metroButton3
             // 
@@ -466,17 +435,6 @@
             this.barraSeletora4.TopRight = System.Drawing.Color.PaleTurquoise;
             this.barraSeletora4.Visible = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ColdWheels.Properties.Resources.flag_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox4.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
             // metroButton4
             // 
             this.metroButton4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -510,7 +468,7 @@
             // containerRelatorio
             // 
             this.containerRelatorio.BackColor = System.Drawing.Color.Transparent;
-            this.containerRelatorio.Controls.Add(this.parrotGradientPanel1);
+            this.containerRelatorio.Controls.Add(this.barraSeletora5);
             this.containerRelatorio.Controls.Add(this.pictureBox5);
             this.containerRelatorio.Controls.Add(this.btnRelatorio);
             this.containerRelatorio.Location = new System.Drawing.Point(0, 320);
@@ -518,38 +476,26 @@
             this.containerRelatorio.Name = "containerRelatorio";
             this.containerRelatorio.Size = new System.Drawing.Size(197, 55);
             this.containerRelatorio.TabIndex = 5;
-            this.containerRelatorio.Visible = false;
             // 
-            // parrotGradientPanel1
+            // barraSeletora5
             // 
-            this.parrotGradientPanel1.BottomLeft = System.Drawing.Color.White;
-            this.parrotGradientPanel1.BottomRight = System.Drawing.Color.White;
-            this.parrotGradientPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            this.parrotGradientPanel1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            this.parrotGradientPanel1.Location = new System.Drawing.Point(0, -9);
-            this.parrotGradientPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.parrotGradientPanel1.Name = "parrotGradientPanel1";
-            this.parrotGradientPanel1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.parrotGradientPanel1.PrimerColor = System.Drawing.Color.White;
-            this.parrotGradientPanel1.Size = new System.Drawing.Size(10, 79);
-            this.parrotGradientPanel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.parrotGradientPanel1.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
-            this.parrotGradientPanel1.TabIndex = 5;
-            this.parrotGradientPanel1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotGradientPanel1.TopLeft = System.Drawing.Color.PaleTurquoise;
-            this.parrotGradientPanel1.TopRight = System.Drawing.Color.PaleTurquoise;
-            this.parrotGradientPanel1.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ColdWheels.Properties.Resources.article_person_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox5.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.barraSeletora5.BottomLeft = System.Drawing.Color.White;
+            this.barraSeletora5.BottomRight = System.Drawing.Color.White;
+            this.barraSeletora5.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            this.barraSeletora5.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+            this.barraSeletora5.Location = new System.Drawing.Point(0, -9);
+            this.barraSeletora5.Margin = new System.Windows.Forms.Padding(0);
+            this.barraSeletora5.Name = "barraSeletora5";
+            this.barraSeletora5.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.barraSeletora5.PrimerColor = System.Drawing.Color.White;
+            this.barraSeletora5.Size = new System.Drawing.Size(10, 79);
+            this.barraSeletora5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.barraSeletora5.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
+            this.barraSeletora5.TabIndex = 5;
+            this.barraSeletora5.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.barraSeletora5.TopLeft = System.Drawing.Color.PaleTurquoise;
+            this.barraSeletora5.TopRight = System.Drawing.Color.PaleTurquoise;
+            this.barraSeletora5.Visible = false;
             // 
             // btnRelatorio
             // 
@@ -575,7 +521,7 @@
             this.btnRelatorio.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
             this.btnRelatorio.StyleManager = null;
             this.btnRelatorio.TabIndex = 3;
-            this.btnRelatorio.Text = "    Relátorio";
+            this.btnRelatorio.Text = "    Contrato";
             this.btnRelatorio.ThemeAuthor = "Taiizor";
             this.btnRelatorio.ThemeName = "MetroLight";
             this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
@@ -583,7 +529,7 @@
             // containerDashboard
             // 
             this.containerDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.containerDashboard.Controls.Add(this.parrotGradientPanel2);
+            this.containerDashboard.Controls.Add(this.barraSeletora6);
             this.containerDashboard.Controls.Add(this.pictureBox6);
             this.containerDashboard.Controls.Add(this.btnDashboard);
             this.containerDashboard.Location = new System.Drawing.Point(0, 375);
@@ -593,36 +539,25 @@
             this.containerDashboard.TabIndex = 6;
             this.containerDashboard.Visible = false;
             // 
-            // parrotGradientPanel2
+            // barraSeletora6
             // 
-            this.parrotGradientPanel2.BottomLeft = System.Drawing.Color.White;
-            this.parrotGradientPanel2.BottomRight = System.Drawing.Color.White;
-            this.parrotGradientPanel2.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            this.parrotGradientPanel2.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            this.parrotGradientPanel2.Location = new System.Drawing.Point(0, -9);
-            this.parrotGradientPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.parrotGradientPanel2.Name = "parrotGradientPanel2";
-            this.parrotGradientPanel2.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.parrotGradientPanel2.PrimerColor = System.Drawing.Color.White;
-            this.parrotGradientPanel2.Size = new System.Drawing.Size(10, 79);
-            this.parrotGradientPanel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.parrotGradientPanel2.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
-            this.parrotGradientPanel2.TabIndex = 5;
-            this.parrotGradientPanel2.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotGradientPanel2.TopLeft = System.Drawing.Color.PaleTurquoise;
-            this.parrotGradientPanel2.TopRight = System.Drawing.Color.PaleTurquoise;
-            this.parrotGradientPanel2.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ColdWheels.Properties.Resources.dashboard_24dp_000000_FILL0_wght400_GRAD0_opsz24;
-            this.pictureBox6.Location = new System.Drawing.Point(20, 15);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
+            this.barraSeletora6.BottomLeft = System.Drawing.Color.White;
+            this.barraSeletora6.BottomRight = System.Drawing.Color.White;
+            this.barraSeletora6.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            this.barraSeletora6.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+            this.barraSeletora6.Location = new System.Drawing.Point(0, -9);
+            this.barraSeletora6.Margin = new System.Windows.Forms.Padding(0);
+            this.barraSeletora6.Name = "barraSeletora6";
+            this.barraSeletora6.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.barraSeletora6.PrimerColor = System.Drawing.Color.White;
+            this.barraSeletora6.Size = new System.Drawing.Size(10, 79);
+            this.barraSeletora6.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.barraSeletora6.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
+            this.barraSeletora6.TabIndex = 5;
+            this.barraSeletora6.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.barraSeletora6.TopLeft = System.Drawing.Color.PaleTurquoise;
+            this.barraSeletora6.TopRight = System.Drawing.Color.PaleTurquoise;
+            this.barraSeletora6.Visible = false;
             // 
             // btnDashboard
             // 
@@ -658,6 +593,171 @@
             this.barraTimer.Interval = 10;
             this.barraTimer.Tick += new System.EventHandler(this.barraTimer_Tick);
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Location = new System.Drawing.Point(0, 430);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(197, 55);
+            this.panel6.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Location = new System.Drawing.Point(0, 485);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(197, 55);
+            this.panel7.TabIndex = 7;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Location = new System.Drawing.Point(0, 540);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(197, 55);
+            this.panel8.TabIndex = 7;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.pictureBox10);
+            this.panel9.Controls.Add(this.metroButton8);
+            this.panel9.Location = new System.Drawing.Point(0, 650);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(197, 55);
+            this.panel9.TabIndex = 7;
+            // 
+            // metroButton8
+            // 
+            this.metroButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroButton8.DisabledBackColor = System.Drawing.Color.Transparent;
+            this.metroButton8.DisabledBorderColor = System.Drawing.Color.Transparent;
+            this.metroButton8.DisabledForeColor = System.Drawing.Color.Transparent;
+            this.metroButton8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroButton8.HoverBorderColor = System.Drawing.Color.Transparent;
+            this.metroButton8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.metroButton8.HoverTextColor = System.Drawing.SystemColors.ControlText;
+            this.metroButton8.IsDerivedStyle = true;
+            this.metroButton8.Location = new System.Drawing.Point(-5, 3);
+            this.metroButton8.Margin = new System.Windows.Forms.Padding(0);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.NormalBorderColor = System.Drawing.Color.Transparent;
+            this.metroButton8.NormalColor = System.Drawing.Color.Transparent;
+            this.metroButton8.NormalTextColor = System.Drawing.SystemColors.ControlText;
+            this.metroButton8.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.metroButton8.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.metroButton8.PressTextColor = System.Drawing.Color.White;
+            this.metroButton8.Size = new System.Drawing.Size(199, 49);
+            this.metroButton8.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
+            this.metroButton8.StyleManager = null;
+            this.metroButton8.TabIndex = 3;
+            this.metroButton8.Text = "      Logout";
+            this.metroButton8.ThemeAuthor = "Taiizor";
+            this.metroButton8.ThemeName = "MetroLight";
+            this.metroButton8.Click += new System.EventHandler(this.metroButton8_Click);
+            // 
+            // botaoMenu
+            // 
+            this.botaoMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botaoMenu.Image = global::ColdWheels.Properties.Resources.menu_30dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.botaoMenu.Location = new System.Drawing.Point(17, 35);
+            this.botaoMenu.Name = "botaoMenu";
+            this.botaoMenu.Size = new System.Drawing.Size(30, 30);
+            this.botaoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.botaoMenu.TabIndex = 0;
+            this.botaoMenu.TabStop = false;
+            this.botaoMenu.Click += new System.EventHandler(this.botaoMenu_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ColdWheels.Properties.Resources.directions_car_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ColdWheels.Properties.Resources.group_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ColdWheels.Properties.Resources.car_tag_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ColdWheels.Properties.Resources.flag_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox4.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::ColdWheels.Properties.Resources.article_person_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox5.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ColdWheels.Properties.Resources.dashboard_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox6.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::ColdWheels.Properties.Resources.logout_24dp_000000_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox10.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 4;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Location = new System.Drawing.Point(0, 595);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(197, 55);
+            this.panel10.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -674,25 +774,28 @@
             this.flpBarra.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.botaoMenu)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.containerRelatorio.ResumeLayout(false);
             this.containerRelatorio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.containerDashboard.ResumeLayout(false);
             this.containerDashboard.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.botaoMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -725,13 +828,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer barraTimer;
         private System.Windows.Forms.Panel containerDashboard;
-        private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel2;
+        private ReaLTaiizor.Controls.ParrotGradientPanel barraSeletora6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private ReaLTaiizor.Controls.MetroButton btnDashboard;
         private System.Windows.Forms.Panel containerRelatorio;
-        private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
+        private ReaLTaiizor.Controls.ParrotGradientPanel barraSeletora5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private ReaLTaiizor.Controls.MetroButton btnRelatorio;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private ReaLTaiizor.Controls.MetroButton metroButton8;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 
