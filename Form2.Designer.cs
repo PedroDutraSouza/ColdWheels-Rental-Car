@@ -159,7 +159,7 @@
             this.txtSenha.Size = new System.Drawing.Size(274, 39);
             this.txtSenha.TabIndex = 2;
             this.txtSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSenha.UseSystemPasswordChar = false;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 

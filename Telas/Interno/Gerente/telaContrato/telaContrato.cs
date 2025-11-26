@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ColdWheels
 {
-    public partial class telaRelatorio : UserControl
+    public partial class telaContrato : UserControl
     {
-        public telaRelatorio()
+        public telaContrato()
         {
             InitializeComponent();
         }

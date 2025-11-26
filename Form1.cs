@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,10 @@ namespace ColdWheels
         public Form1()
         {
             InitializeComponent();
+            TrocarTela(new telaHome());
             Instance = this;
             ConfigurarPermissoes();
+            
         }
         private void ConfigurarPermissoes()
         {
@@ -28,9 +31,8 @@ namespace ColdWheels
             if (Sessao.IsGerente)
             {
                 containerDashboard.Visible = true;
-                containerRelatorio.Visible = true;
+                panel10.Visible = false;
             }
-            
         }
 
         public void TrocarTela(UserControl novaTela)
@@ -89,76 +91,115 @@ namespace ColdWheels
             pictureBox1.BackColor = metroButton2.NormalColor;
             pictureBox3.BackColor = metroButton2.NormalColor;
             pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox5.BackColor = metroButton2.NormalColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox6.BackColor = metroButton2.NormalColor;
             barraSeletora.Visible = true;
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
             barraSeletora4.Visible = false;
+            barraSeletora6.Visible = false;
+            barraSeletora5.Visible = false;
             TrocarTela(new telaVeiculos());
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            pictureBox1.BackColor = metroButton2.HoverColor;
+            pictureBox1.BackColor = metroButton1.HoverColor;
             pictureBox2.BackColor = metroButton2.NormalColor;
             pictureBox3.BackColor = metroButton2.NormalColor;
             pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox5.BackColor = metroButton2.NormalColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox6.BackColor = metroButton2.NormalColor;
             barraSeletora2.Visible = true;
             barraSeletora.Visible = false;
             barraSeletora3.Visible = false;
             barraSeletora4.Visible = false;
+            barraSeletora6.Visible = false;
+            barraSeletora5.Visible = false;
             TrocarTela(new telaClientes());
         }
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
-            pictureBox3.BackColor = metroButton2.HoverColor;
+            pictureBox3.BackColor = metroButton3.HoverColor;
             pictureBox1.BackColor = metroButton2.NormalColor;
             pictureBox2.BackColor = metroButton2.NormalColor;
             pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox5.BackColor = metroButton2.NormalColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox6.BackColor = metroButton2.NormalColor;
             barraSeletora3.Visible = true;
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora4.Visible = false;
+            barraSeletora6.Visible = false;
+            barraSeletora5.Visible = false;
             TrocarTela(new telaLocacoes());
         }
 
         private void metroButton4_Click(object sender, EventArgs e)
         {
-            pictureBox4.BackColor = metroButton2.HoverColor;
+            pictureBox4.BackColor = metroButton4.HoverColor;
             pictureBox1.BackColor = metroButton2.NormalColor;
             pictureBox2.BackColor = metroButton2.NormalColor;
             pictureBox3.BackColor = metroButton2.NormalColor;
+            pictureBox5.BackColor = metroButton2.NormalColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
+            pictureBox6.BackColor = metroButton2.NormalColor;
             barraSeletora4.Visible = true;
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
+            barraSeletora6.Visible = false;
+            barraSeletora5.Visible = false;
             TrocarTela(new telaMultas());
         }
 
         private void btnRelatorio_Click(object sender, EventArgs e)
         {
-            pictureBox4.BackColor = metroButton2.HoverColor;
+            pictureBox5.BackColor = metroButton2.HoverColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
             pictureBox1.BackColor = metroButton2.NormalColor;
             pictureBox2.BackColor = metroButton2.NormalColor;
             pictureBox3.BackColor = metroButton2.NormalColor;
-            barraSeletora4.Visible = true;
+            pictureBox6.BackColor = metroButton2.NormalColor;
+            barraSeletora5.Visible = true;
+            barraSeletora4.Visible = false;
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
-            TrocarTela(new telaRelatorio());
+            barraSeletora6.Visible = false;
+            TrocarTela(new telaContrato());
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            pictureBox4.BackColor = metroButton2.HoverColor;
+            pictureBox6.BackColor = metroButton2.HoverColor;
+            pictureBox5.BackColor = metroButton2.NormalColor;
+            pictureBox4.BackColor = metroButton2.NormalColor;
             pictureBox1.BackColor = metroButton2.NormalColor;
             pictureBox2.BackColor = metroButton2.NormalColor;
             pictureBox3.BackColor = metroButton2.NormalColor;
-            barraSeletora4.Visible = true;
+            barraSeletora6.Visible = true;
+            barraSeletora5.Visible = false;
+            barraSeletora4.Visible = false;
             barraSeletora.Visible = false;
             barraSeletora2.Visible = false;
             barraSeletora3.Visible = false;
-            TrocarTela(new telaDashboard());
+            pnlContent.Controls.Clear();
+            TrocarTela(new telaHome());
+            string url = "https://app.powerbi.com/groups/me/reports/463170ec-03c3-4e79-81d9-52d8d7cd6230/c09250772505535907ab?language=pt-BR&experience=power-bi";
+
+            try
+            {
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao abrir o site: " + ex.Message);
+            }
         }
 
 
@@ -217,6 +258,13 @@ namespace ColdWheels
         private void botaoMenu_Click(object sender, EventArgs e)
         {
             barraTimer.Start();
+        }
+
+        private void metroButton8_Click(object sender, EventArgs e)
+        {
+            var tela = new Form2();
+            tela.Show();
+            this.Hide();
         }
     }
 }

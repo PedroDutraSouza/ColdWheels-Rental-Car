@@ -16,7 +16,7 @@ namespace ColdWheels
         public static bool IsCliente => Tipo == "cliente";
         public static bool IsFuncionario => Cargo == "funcionario"; 
         public static bool IsGerente => Cargo == "gerente";
-
+        
 
 
     public static void Limpar()
